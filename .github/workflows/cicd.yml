@@ -38,5 +38,5 @@ jobs:
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            chmod +x /home/${{ secrets.VM_USER }}/app/rust-web-sever
+            chmod +x /home/${{ secrets.VM_USER }}/app/ -R
             sudo systemctl restart nginx.service
