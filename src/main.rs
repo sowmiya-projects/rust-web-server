@@ -6,7 +6,7 @@ fn main() {
     println!("Server running on port 8080...");
 
     for request in server.incoming_requests() {
-        let response = Response::from_string("Rust app is running on VM!");
+        let response = Response::from_string("Rust app is running on VM! - V-1.0.0");
         let _ = request.respond(response);
     }
 }
